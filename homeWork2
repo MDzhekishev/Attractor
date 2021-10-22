@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class homeWork2 {
+    public static void main (String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите предыдущее значение электро счетчика: ");
+        int previuos = sc.nextInt();
+        System.out.println("Введите текущее значение электросчетчика ");
+        int curent = sc.nextInt();
+        int maxPrevious = Math.max(previuos, curent);
+        int minCurent = Math.min(previuos, curent);
+        int result = maxPrevious - minCurent;
+        int rate = 21;
+        int forPay = result*rate;
+        System.out.println("Вы потребили: " + result + " кВт");
+        System.out.println("Тариф: 21тг");
+        System.out.println("К оплате: " + forPay + "тг");
+
+    }
+}
