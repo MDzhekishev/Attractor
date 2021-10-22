@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class homeWork2_1 {
+    public static void main(String[] args)
+
+    {
+        System.out.println("Решаем ax2 + bx + c = 0:");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите значение a:");
+        double a = sc.nextInt();
+        System.out.println("Введите значение b:");
+        double b = sc.nextInt();
+        System.out.println("Введите значение с:");
+        double c = sc.nextInt();
+        double d = (Math.pow(b,2))-4*a*c;
+        double result1 = (-1*b+Math.sqrt(d))/(2*a);
+        double result2 =(-1*b-Math.sqrt(d))/(2*a);
+        System.out.println("Первый корень уровнения: " + result1);
+        System.out.println("Второй корень уровнения: " + result2);
+
+    }
+
+}
